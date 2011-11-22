@@ -236,6 +236,11 @@
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/su" name="CyanogenMod/android_system_su" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
+  
+  <!-- Proyectos del SuperTeam -->
+  <project path="device/samsung/galaxys2" name="superatmel/android_device_samsung_galaxys2" remote="github" revision="ics" />
+  <project path="vendor/samsung/galaxys2" name="superatmel/android_vendor_samsung_galaxys2" remote="github" revision="ics" />
+  <project path="vendor/SuperTeam" name="SuperOSR/vendor_ics_superteam" remote="github" revision="ics" />
 
   <project path="android" name="CyanogenMod/android" />
 </manifest>
