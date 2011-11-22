@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="github"
+           fetch="git://github.com/" />
+ 
+  <remote  name="korg"
+           fetch="git://android.git.kernel.org/"
+           review="review.source.android.com" />
+                     
+  <remote  name="vlc"
+           fetch="git://git.videolan.org/" />
+
+  <default revision="master"
+           remote="github" />
+
+  <project path="kernel/magic" name="pershoot/kernel-2638" />
+  <project path="kernel/tegra" name="CyanogenMod/lge-kernel-star" revision="android-tegra-2.6.32"/>
+  <project path="external/vlc" name="vlc/vlc-android" remote="vlc" />
+  <project path="kernel/bravo" name="CyanogenMod/cm-kernel" revision="android-msm-2.6.37" />
+
+</manifest>
