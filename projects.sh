@@ -19,9 +19,6 @@ TOPDIR=`pwd`
 GIT=git
 MAINDIR=android
 XMLFILE=$2
-PATCHFILE=$MAINDIR/parches.txt
-PATCHDIR=$MAINDIR/parches
-PATCHEXECDIR=$MAINDIR/patches
 DefRemote=`xmllint --xpath 'string(//default/@remote)' $XMLFILE`
 DefBranch=`xmllint --xpath 'string(//default/@revision)' $XMLFILE`
 
@@ -107,12 +104,6 @@ function setEnv(){
 	getName $1
 	getUpstream $1
 }
-
-if [ "$1" = sync ]; then
-	echo `date` >> cambios.txt
-	setEnv "path=\"android\""
-	gitPull
-fi
 
 getProjectList
 				

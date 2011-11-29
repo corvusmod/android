@@ -18,34 +18,7 @@ SCRIPTDIR=`dirname $0`
 TOPDIR=`pwd`
 GIT=git
 MAINDIR=android
-PATCHFILE=$MAINDIR/parches.txt
-PATCHDIR=$MAINDIR/parches
-PATCHEXECDIR=$MAINDIR/patches
 
-$SCRIPTDIR/projects.sh $1 $MAINDIR/default.xml
-
-if [ -f $MAINDIR/mydefault.xml ]; then
-	$SCRIPTDIR/projects.sh $1 $MAINDIR/mydefault.xml
-fi
-
-if [ "$1" = init ]; then
-	cp build/core/root.mk Makefile
-fi
-		
-#Aplicamos parches
-for f in `ls $PATCHDIR`; do
-	DIRP=`grep $f $PATCHFILE | cut -d " " -f 1`
-	FILEP=`grep $f $PATCHFILE | cut -d " " -f 2`
-	if [ ! -f $PATCHEXECDIR/$FILEP ]; then
-		echo "Aplicando parche a $DIRP"
-		cp $PATCHDIR/$f $DIRP/$FILEP
-		cd $DIRP
-		git am --signoff < $FILEP
-		mv $FILEP $TOPDIR/$PATCHEXECDIR
-		cd $TOPDIR
-	fi
-done
-
-if [ "$1" = sync ]; then
-	find . -path './roms' -prune -o -path './out' -prune -o -path '*/.git' -prune -o -path './.repo' -prune -o \! -type d -newer cambios.txt -print >> cambios.txt
+if [ -f $MAINDIR/personal.xml ]; then
+	$SCRIPTDIR/projects.sh $1 $MAINDIR/personal.xml
 fi
