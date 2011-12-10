@@ -8,10 +8,11 @@
            fetch="git://github.com/" 
            review="review.cyanogenmod.com" />
 
-  <default revision="refs/heads/ics"
+  <default revision="ics"
            remote="github"
            sync-j="4" />
 
+  <project path="android" name="SuperOSR/android" />
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -259,5 +260,4 @@
   <project path="vendor/samsung/galaxys2" name="superatmel/android_vendor_samsung_galaxys2" remote="github" revision="ics" />
   <project path="vendor/SuperTeam" name="SuperOSR/vendor_ics_superteam" remote="github" revision="ics" />
 
-  <project path="android" name="SuperOSR/android" revision="ics" />
 </manifest>
