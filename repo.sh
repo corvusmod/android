@@ -19,6 +19,20 @@ TOPDIR=`pwd`
 GIT=git
 MAINDIR=android
 
+if [ "$1" = sync ]; then
+	touch cambios.txt
+fi
+
+$SCRIPTDIR/projects.sh $1 $MAINDIR/default.xml
+
 if [ -f $MAINDIR/personal.xml ]; then
 	$SCRIPTDIR/projects.sh $1 $MAINDIR/personal.xml
+fi
+
+if [ "$1" = init ]; then
+	cp build/core/root.mk Makefile
+fi
+
+if [ "$1" = sync ]; then
+	find . -path './roms' -prune -o -path './out' -prune -o -path '*/.git' -prune -o -path './.repo' -prune -o \! -type d -newer cambios.txt -print >> cambios.txt
 fi
