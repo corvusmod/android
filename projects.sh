@@ -29,41 +29,38 @@ function getProjectList(){
 
 function getPath(){
 	mPath=`xmllint --xpath 'string(//project[@'$1']/@path)' $XMLFILE`
-} 
+}
 
 function getName(){
 	mName=`xmllint --xpath 'string(//project[@'$1']/@name)' $XMLFILE`
-} 
+}
 
 function getPath(){
 	mPath=`xmllint --xpath 'string(//project[@'$1']/@path)' $XMLFILE`
-} 
+}
 
 function getRemote(){
 	mRemote=`xmllint --xpath 'string(//project[@'$1']/@remote)' $XMLFILE`
-	if [ -z "$mRemote" ]; then
-		mRemote=$DefRemote
-	fi
-} 
+	mRemote=${mRemote:=$DefRemote}
+}
 
 function getRemoteURL(){
 	mRemoteURL=`xmllint --xpath 'string(//remote[@name="'$1'"]/@fetch)' $XMLFILE`
-} 
+}
 
 function getBranch(){
 	mBranch=`xmllint --xpath 'string(//project[@'$1']/@revision)' $XMLFILE`
-	if [ -z "$mBranch" ]; then
-		mBranch=$DefBranch
-	fi
-} 
+    mBranch=${mBranch#"refs/tags/"}
+	mBranch=${mBranch:=$DefBranch}
+}
 
 function getUpstream(){
 	mUpstream=`xmllint --xpath 'string(//project[@'$1']/@upstream)' $XMLFILE`
-} 
+}
 
 function gitPull(){
 	cd $mPath
-	$GIT pull 
+	$GIT pull
 	#$GIT rebase origin/$mBranch
 	cd $TOPDIR
 }
@@ -77,7 +74,7 @@ function gitUpstream(){
 
 function gitClone(){
 	mkdir -p $mPath
-	$GIT clone $mRemoteURL$mName $mPath -b $mBranch
+	$GIT clone $mRemoteURL$mName $mPath
 	cd $mPath
 	$GIT checkout $mBranch
 	if [ ! -z $mUpstream ]; then
@@ -106,7 +103,7 @@ function setEnv(){
 }
 
 getProjectList
-				
+
 for d in $PROJECTLIST; do
 	setEnv $d
 	if [ "$1" = status ]; then
@@ -116,10 +113,10 @@ for d in $PROJECTLIST; do
 	elif [ "$1" = init ]; then
 		if [ ! -d $mPath ]; then
 			gitClone
-		fi		
+		fi
 	elif [ "$1" = sync ]; then
 	  	echo -e "\033[1;32m" $mPath "\033[0m"
-	  	
+
 		if [ -d $mPath ]; then
 			gitPull
 		else
@@ -127,7 +124,7 @@ for d in $PROJECTLIST; do
 		fi
 	elif [ "$1" = fullsync ]; then
 	  	echo -e "\033[1;32m" $mPath "\033[0m"
-	  	
+
 		if [ -d $mPath ]; then
 			gitPull
 			gitUpstream
