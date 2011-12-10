@@ -21,7 +21,7 @@ MAINDIR=android
 XMLFILE=$2
 DefRemote=`xmllint --xpath 'string(//default/@remote)' $XMLFILE`
 DefBranch=`xmllint --xpath 'string(//default/@revision)' $XMLFILE`
-
+DefBranch=${DefBranch#"refs/heads/"}
 
 function getProjectList(){
 	PROJECTLIST=`xmllint --xpath '//project/@path' $TOPDIR/$XMLFILE`
