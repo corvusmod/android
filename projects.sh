@@ -19,12 +19,11 @@ TOPDIR=`pwd`
 GIT=git
 MAINDIR=android
 XMLFILE=$2
-DefRemote=`xmllint --xpath 'string(//default/@remote)' $XMLFILE`
-DefBranch=`xmllint --xpath 'string(//default/@revision)' $XMLFILE`
-DefBranch=${DefBranch#"refs/heads/"}
+OLDXMLFILE=`mktemp`
 
 function getProjectList(){
 	PROJECTLIST=`xmllint --xpath '//project/@path' $TOPDIR/$XMLFILE`
+	OLDPROJECTLIST=`xmllint --xpath '//project/@path' $OLDXMLFILE`
 }
 
 function getPath(){
@@ -33,10 +32,6 @@ function getPath(){
 
 function getName(){
 	mName=`xmllint --xpath 'string(//project[@'$1']/@name)' $XMLFILE`
-}
-
-function getPath(){
-	mPath=`xmllint --xpath 'string(//project[@'$1']/@path)' $XMLFILE`
 }
 
 function getRemote(){
@@ -49,8 +44,12 @@ function getRemoteURL(){
 }
 
 function getBranch(){
+	mIsTag=false
 	mBranch=`xmllint --xpath 'string(//project[@'$1']/@revision)' $XMLFILE`
-    mBranch=${mBranch#"refs/tags/"}
+	if [[ "$mBranch" =~ "refs/tags" ]]; then
+    	mBranch=${mBranch#"refs/tags/"}
+    	mIsTag=true
+    fi
 	mBranch=${mBranch:=$DefBranch}
 }
 
@@ -60,8 +59,13 @@ function getUpstream(){
 
 function gitPull(){
 	cd $mPath
-	$GIT pull
-	#$GIT rebase origin/$mBranch
+	if $mIsTag; then
+		$GIT pull origin master
+		$GIT checkout $mBranch
+	else
+		$GIT pull
+		$GIT rebase origin/$mBranch
+	fi
 	cd $TOPDIR
 }
 
@@ -102,7 +106,39 @@ function setEnv(){
 	getUpstream $1
 }
 
+function isSameProject(){
+	oldRemote=`xmllint --xpath 'string(//project[@'$1']/@remote)' $OLDXMLFILE`
+	oldRemote=${oldRemote:=$DefOldRemote}
+	if [ $oldRemote = $mRemote ]; then
+		return 0
+	fi
+	return 1
+}
+		
+function init(){
+	cp $XMLFILE $OLDXMLFILE
+	DefRemote=`xmllint --xpath 'string(//default/@remote)' $XMLFILE`
+	DefOldRemote=`xmllint --xpath 'string(//default/@remote)' $OLDXMLFILE`
+	DefBranch=`xmllint --xpath 'string(//default/@revision)' $XMLFILE`
+	DefBranch=${DefBranch#"refs/heads/"}
+	setEnv "path=\"$MAINDIR\""
+	gitPull
+}
+ 		
+init
 getProjectList
+
+for d in $OLDPROJECTLIST; do
+	if ! [[ $PROJECTLIST =~ $d ]]; then
+		oldpath=`xmllint --xpath 'string(//project[@'$d']/@path)' $OLDXMLFILE`
+		echo -e "Se ha quitado la ruta\033[1;31m $oldpath\033[0m de la lista de proyectos."
+		echo "¿Quiere borrarlo (N/s)?"
+		read option
+		if [ "$option" = s ]; then
+			rm -rf $oldpath
+		fi
+	fi
+done
 
 for d in $PROJECTLIST; do
 	setEnv $d
@@ -116,6 +152,11 @@ for d in $PROJECTLIST; do
 		fi
 	elif [ "$1" = sync ]; then
 	  	echo -e "\033[1;32m" $mPath "\033[0m"
+	  	isSameProject $d
+	  	if [ $? -eq 1 ]; then
+			echo -e "Se ha cambiado el servidor del proyecto \033[1;31m $oldpath\033[0m, se borra para clonarlo."
+	  		rm -rf $mPath
+	  	fi
 
 		if [ -d $mPath ]; then
 			gitPull
