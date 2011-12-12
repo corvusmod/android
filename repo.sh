@@ -23,10 +23,11 @@ if [ "$1" = sync ]; then
 	touch cambios.txt
 fi
 
-$SCRIPTDIR/projects.sh $1 $MAINDIR/default.xml
+$SCRIPTDIR/projects.sh $1 $MAINDIR/default.xml $2
 
 if [ -f $MAINDIR/personal.xml ]; then
-	$SCRIPTDIR/projects.sh $1 $MAINDIR/personal.xml
+	echo "Procesando proyectos personalizados..."
+	$SCRIPTDIR/projects.sh $1 $MAINDIR/personal.xml $2
 fi
 
 if [ "$1" = init ]; then
@@ -34,5 +35,6 @@ if [ "$1" = init ]; then
 fi
 
 if [ "$1" = sync ]; then
+	echo "Buscando ficheros cambiados..."
 	find . -path './roms' -prune -o -path './out' -prune -o -path '*/.git' -prune -o -path './.repo' -prune -o \! -type d -newer cambios.txt -print >> cambios.txt
 fi

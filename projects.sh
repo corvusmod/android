@@ -109,10 +109,14 @@ function setEnv(){
 function isSameProject(){
 	oldRemote=`xmllint --xpath 'string(//project[@'$1']/@remote)' $OLDXMLFILE`
 	oldRemote=${oldRemote:=$DefOldRemote}
-	if [ $oldRemote = $mRemote ]; then
-		return 0
+	if [ ! $oldRemote = $mRemote ]; then
+		return 1
 	fi
-	return 1
+	oldName=`xmllint --xpath 'string(//project[@'$1']/@name)' $OLDXMLFILE`
+		if [ ! $oldName = $mName ]; then
+		return 1
+	fi
+	return 0
 }
 		
 function init(){
@@ -126,7 +130,12 @@ function init(){
 }
  		
 init
-getProjectList
+
+if [ -z $3 ]; then
+	getProjectList
+else
+	PROJECTLIST="path=\""$3"\""
+fi
 
 for d in $OLDPROJECTLIST; do
 	if ! [[ $PROJECTLIST =~ $d ]]; then
