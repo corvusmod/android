@@ -12,7 +12,7 @@
            remote="github"
            sync-j="4" />
 
-  <project path="android" name="SuperOSR/android" />
+  <project path="android" name="SuperOSR/android" revision="ics2" />
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
