@@ -104,7 +104,6 @@
   <project path="external/mksh" name="platform/external/mksh" remote="aosp" revision="refs/tags/android-4.0.1_r1.2" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" remote="aosp" revision="refs/tags/android-4.0.1_r1.2" />
   <project path="external/mtpd" name="CyanogenMod/android_external_mtpd" />
-  <project path="external/nano" name="CyanogenMod/android_external_nano" />
   <project path="external/netcat" name="CyanogenMod/android_external_netcat" />
   <project path="external/netperf" name="CyanogenMod/android_external_netperf" />
   <project path="external/neven" name="CyanogenMod/android_external_neven" />
@@ -148,7 +147,6 @@
   <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" remote="aosp" revision="refs/tags/android-4.0.1_r1.2" />
   <project path="external/xmlwriter" name="CyanogenMod/android_external_xmlwriter" />
-  <project path="external/vim" name="CyanogenMod/android_external_vim" revision="master" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.1_r1.2" />
