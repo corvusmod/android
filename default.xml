@@ -32,6 +32,7 @@
   <project path="device/moto/wingray" name="CyanogenMod/android_device_moto_wingray" />
   <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="device/samsung/maguro" name="CyanogenMod/android_device_samsung_maguro" />
+  <project path="device/samsung/p4-common" name="CyanogenMod/android_device_samsung_p4-common" />
   <project path="device/samsung/toro" name="CyanogenMod/android_device_samsung_toro" />
   <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" />
   <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
@@ -53,7 +54,6 @@
   <project path="external/bzip2" name="CyanogenMod/android_external_bzip2" />
   <project path="external/chromium" name="CyanogenMod/android_external_chromium" />
   <project path="external/clang" name="platform/external/clang" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
-  <project path="external/clearsilver" name="CyanogenMod/android_external_clearsilver" />
   <project path="external/collada" name="platform/external/collada" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="external/dbus" name="CyanogenMod/android_external_dbus" />
   <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" />
@@ -114,6 +114,7 @@
   <project path="external/mksh" name="platform/external/mksh" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="external/mtpd" name="CyanogenMod/android_external_mtpd" />
+  <project path="external/nano" name="CyanogenMod/android_external_nano" />
   <project path="external/netcat" name="CyanogenMod/android_external_netcat" />
   <project path="external/netperf" name="CyanogenMod/android_external_netperf" />
   <project path="external/neven" name="CyanogenMod/android_external_neven" />
@@ -158,6 +159,7 @@
   <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" />
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" />
   <project path="external/xmlwriter" name="CyanogenMod/android_external_xmlwriter" />
+  <project path="external/vim" name="CyanogenMod/android_external_vim" revision="master" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
