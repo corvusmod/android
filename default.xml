@@ -264,11 +264,11 @@
   <project path="hardware/qcom/display" name="SuperICS/android_hardware_qcom_display" remote="github" revision="ics-sup" />
   <project path="hardware/qcom/media" name="SuperICS/android_hardware_qcom_media" remote="github" revision="ics-sup" />
   <project path="hardware/msm7k" name="SuperICS/android_hardware_msm7k" remote="github" revision="ics-sup" />  
- <!-- <project path="device/lge/p990" name="podxboq/android_device_lge_p990" remote="github" revision="ics" />
+  <project path="device/lge/p990" name="podxboq/android_device_lge_p990" remote="github" revision="ics" />
   <project path="vendor/lge/p990" name="podxboq/vendor_lge_p990" remote="github" revision="ics" />
   <project path="device/samsung/galaxys2" name="superatmel/android_device_samsung_galaxys2" remote="github" revision="ics" />
   <project path="vendor/samsung/galaxys2" name="superatmel/android_vendor_samsung_galaxys2" remote="github" revision="ics" />
-  <project path="vendor/SuperTeam" name="SuperOSR/vendor_ics_superteam" remote="github" revision="ics" />-->
+  <project path="vendor/SuperTeam" name="SuperOSR/vendor_ics_superteam" remote="github" revision="ics" />
 
 </manifest>
 
