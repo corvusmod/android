@@ -16,6 +16,7 @@
            remote="github"
            sync-j="4" />
 
+  <project path="android" name="SuperICS/android" revision="ics-sup" />
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -166,7 +167,6 @@
   <project path="external/vim" name="CyanogenMod/android_external_vim" revision="master" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" />
@@ -181,12 +181,7 @@
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
   <project path="hardware/invensense" name="platform/hardware/invensense" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
-  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" />
-  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" />
-  <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" />
-  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
-  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
@@ -210,6 +205,7 @@
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
+  <project path="packages/apps/Launcher2" name="CyanogenMod/android_packages_apps_Launcher2" />
   <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms" />
   <project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" />
   <project path="packages/apps/MusicFX" name="CyanogenMod/android_packages_apps_MusicFX" />
@@ -251,7 +247,7 @@
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github-https" />
-  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
+  <!--<project path="prebuilt" name="platform/prebuilt" remote="aosp" revision="refs/tags/android-4.0.3_r1" />-->
   <project path="sdk" name="CyanogenMod/android_sdk" />
   <project path="system/bluetooth" name="CyanogenMod/android_system_bluetooth" />
   <project path="system/core" name="CyanogenMod/android_system_core" />
@@ -260,6 +256,19 @@
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/su" name="CyanogenMod/android_system_su" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
+  
+  <!-- Proyectos del SuperTeam -->
+  <project path="frameworks/base" name="SuperICS/android_frameworks_base" remote="github" revision="ics-sup" />
+  <project path="hardware/libhardware" name="SuperICS/android_hardware_libhardware" remote="github" revision="ics-sup" />
+  <project path="hardware/libhardware_legacy" name="SuperICS/android_hardware_libhardware_legacy" remote="github" revision="ics-sup" />
+  <project path="hardware/qcom/display" name="SuperICS/android_hardware_qcom_display" remote="github" revision="ics-sup" />
+  <project path="hardware/qcom/media" name="SuperICS/android_hardware_qcom_media" remote="github" revision="ics-sup" />
+  <project path="hardware/msm7k" name="SuperICS/android_hardware_msm7k" remote="github" revision="ics-sup" />  
+ <!-- <project path="device/lge/p990" name="podxboq/android_device_lge_p990" remote="github" revision="ics" />
+  <project path="vendor/lge/p990" name="podxboq/vendor_lge_p990" remote="github" revision="ics" />
+  <project path="device/samsung/galaxys2" name="superatmel/android_device_samsung_galaxys2" remote="github" revision="ics" />
+  <project path="vendor/samsung/galaxys2" name="superatmel/android_vendor_samsung_galaxys2" remote="github" revision="ics" />
+  <project path="vendor/SuperTeam" name="SuperOSR/vendor_ics_superteam" remote="github" revision="ics" />-->
 
-  <project path="android" name="CyanogenMod/android" />
 </manifest>
+
