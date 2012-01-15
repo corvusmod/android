@@ -251,12 +251,12 @@
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="frameworks/base" name="SuperICS/android_frameworks_base" remote="github" revision="ics" />
+  -<project path="vendor/osr" name="SuperICS/android_vendor_osr" remote="github" revision="ics" />
   <!--<project path="hardware/libhardware_legacy" name="SuperICS/android_hardware_libhardware_legacy" />
   <project path="device/lge/p990" name="podxboq/android_device_lge_p990" remote="github" revision="ics" />
   <project path="vendor/lge/p990" name="podxboq/vendor_lge_p990" remote="github" revision="ics" />
   <project path="device/samsung/galaxys2" name="superatmel/android_device_samsung_galaxys2" remote="github" revision="ics" />
   <project path="vendor/samsung/galaxys2" name="superatmel/android_vendor_samsung_galaxys2" remote="github" revision="ics" />-->
-  <!--<project path="vendor/osr" name="SuperICS/vendor_osr" remote="github" revision="ics" />-->
 
 </manifest>
 
