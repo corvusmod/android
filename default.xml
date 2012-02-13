@@ -248,6 +248,7 @@
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="packages/apps/Phone" name="SuperICS/android_packages_apps_Phone" remote="github" revision="ics" />
+  <project path="packages/apps/ROMControl" name="SuperICS/android_packages_apps_ROMControl" remote="github" revision="ics" />
   <project path="packages/apps/Settings" name="SuperICS/android_packages_apps_Settings" remote="github" revision="ics" />
   <project path="frameworks/base" name="SuperICS/android_frameworks_base" remote="github" revision="ics" />
   -<project path="vendor/osr" name="SuperICS/android_vendor_osr" remote="github" revision="ics" />
