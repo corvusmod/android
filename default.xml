@@ -249,6 +249,7 @@
   <project path="build" name="SuperICS/android_build">
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="packages/apps/FileExplorer" name="SuperICS/android_packages_apps_FileExplorer" remote="github" revision="master" />
   <project path="packages/apps/Launcher2" name="SuperICS/android_packages_apps_Launcher2" remote="github" revision="ics" />
   <project path="packages/apps/Phone" name="SuperICS/android_packages_apps_Phone" remote="github" revision="ics" />
   <project path="packages/apps/ROMControl" name="SuperICS/android_packages_apps_ROMControl" remote="github" revision="ics" />
