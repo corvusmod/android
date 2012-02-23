@@ -265,4 +265,3 @@
   <project path="vendor/samsung/galaxys2" name="superatmel/android_vendor_samsung_galaxys2" remote="github" revision="ics" />-->
 
 </manifest>
-
