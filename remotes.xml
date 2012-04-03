@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="aokp" fetch="git://github.com/AOKP/" />
+	<remote name="aosp" fetch="https://android.googlesource.com/" />
+	<remote name="assembla" fetch="git@git.assembla.com:" />
+	<remote name="cm" fetch="git://github.com/CyanogenMod/" />
+	<remote name="ev" fetch="git://github.com/Evervolv/" />
+	<remote name="github" fetch="git://github.com/" />
+	<remote name="nelo" fetch="git://github.com/nelo360/" />
+	<remote name="osr" fetch="git@github.com:SuperOSR/" />
+	<remote name="podxboq" fetch="git@github.com:podxboq/" />
+	<remote name="st" fetch="git@github.com:SuperICS/" />
+	<remote name="vlc" fetch="git://git.videolan.org/" revision="master" />
+	<remote name="vork" fetch="https://bitbucket.org/Vork/" />
+
+	<default remote="github" revision="ics" />
+
+</manifest>
