@@ -12,6 +12,7 @@
 	<remote name="st" fetch="git@github.com:SuperICS/" />
 	<remote name="vlc" fetch="git://git.videolan.org/" revision="master" />
 	<remote name="vork" fetch="https://bitbucket.org/Vork/" />
+	<remote name="shawe" fetch="git@github.com:shawe/" />
 
 	<default remote="github" revision="ics" />
 
