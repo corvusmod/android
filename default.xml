@@ -271,7 +271,7 @@
   <project path="hardware/qcom/display" name="SuperICS/android_hardware_qcom_display" remote="github" revision="ics"/>
   <project path="external/wpa_supplicant" name="SuperICS/android_external_wpa_supplicant" remote="github" revision="ics"/>
   <project path="external/mtd-utils" name="SuperICS/external_amlogic_mtdutils" remote="github" revision="ics"/>
-  <project name="themes-platform-vendor-tmobile-apps-ThemeChooser" path="vendor/tmobile/apps/ThemeChooser" remote="github" revision="ics"/>
+  <project name="SuperICS/themes-platform-vendor-tmobile-apps-ThemeChooser" path="vendor/tmobile/apps/ThemeChooser" remote="github" revision="ics"/>
   
   <!--<project path="device/lge/p990" name="podxboq/android_device_lge_p990" remote="github" revision="ics" />
   <project path="vendor/lge/p990" name="podxboq/vendor_lge_p990" remote="github" revision="ics" />
