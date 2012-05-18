@@ -184,7 +184,6 @@
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
   <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
   <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
-  <project path="packages/apps/Camera" name="CyanogenMod/android_packages_apps_Camera" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
@@ -257,6 +256,7 @@
   <project path="build" name="SuperICS/android_build">
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="packages/apps/Camera" name="SuperICS/android_packages_apps_Camera" remote="github" revision="ics" />
   <project path="packages/apps/ContactsWidgets" name="SuperICS/android_packages_apps_ContactsWidgets" remote="github" revision="ics" />
   <project path="packages/apps/FileExplorer" name="SuperICS/android_packages_apps_FileExplorer" remote="github" revision="ics" />
   <project path="packages/apps/Launcher2" name="SuperICS/android_packages_apps_Launcher2" remote="github" revision="ics" />
