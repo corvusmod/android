@@ -188,7 +188,6 @@
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
-  <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
@@ -258,6 +257,7 @@
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="packages/apps/ContactsWidgets" name="SuperICS/android_packages_apps_ContactsWidgets" remote="github" revision="ics" />
+  <project path="packages/apps/DeskClock" name="SuperICS/android_packages_apps_DeskClock" remote="github" revision="ics" />
   <project path="packages/apps/FileExplorer" name="SuperICS/android_packages_apps_FileExplorer" remote="github" revision="ics" />
   <project path="packages/apps/Launcher2" name="SuperICS/android_packages_apps_Launcher2" remote="github" revision="ics" />
   <project path="packages/apps/Notes" name="SuperICS/android_packages_apps_Notes" remote="github" revision="ics" />
