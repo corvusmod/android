@@ -3,6 +3,7 @@
 	<remote name="aokp" fetch="git://github.com/AOKP/" />
 	<remote name="aosp" fetch="https://android.googlesource.com/" />
 	<remote name="assembla" fetch="git@git.assembla.com:" />
+	<remote name="blerfont" fetch="git@github.com:blerfont/" />
 	<remote name="cm" fetch="git://github.com/CyanogenMod/" />
 	<remote name="ev" fetch="git://github.com/Evervolv/" />
 	<remote name="github" fetch="git://github.com/" />
