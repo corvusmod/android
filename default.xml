@@ -262,6 +262,8 @@
   <project path="packages/apps/FM" name="SuperICS/android_packages_apps_FM" remote="github" revision="ics" />
   <project path="packages/apps/Launcher2" name="SuperICS/android_packages_apps_Launcher2" remote="github" revision="ics" />
   <project path="packages/apps/Notes" name="SuperICS/android_packages_apps_Notes" remote="github" revision="ics" />
+  <project path="packages/apps/Settings" name="SuperICS/android_packages_apps_Settings" remote="github" revision="ics" />
+  <project path="packages/apps/ota-rootkeeper-app" name="SuperICS/ota-rootkeeper-app" remote="github" revision="ics" />
   <project path="packages/apps/Phone" name="SuperICS/android_packages_apps_Phone" remote="github" revision="ics" />
   <project path="packages/apps/ROMControl" name="SuperICS/android_packages_apps_ROMControl" remote="github" revision="ics" />
   <project path="packages/apps/S2E" name="shawe/S2E" revision="master"/>
