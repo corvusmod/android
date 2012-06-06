@@ -265,7 +265,7 @@
   <project path="packages/apps/ota-rootkeeper-app" name="SuperICS/ota-rootkeeper-app" remote="github" revision="ics" />
   <project path="packages/apps/Phone" name="SuperICS/android_packages_apps_Phone" remote="github" revision="ics" />
   <project path="packages/apps/ROMControl" name="SuperICS/android_packages_apps_ROMControl" remote="github" revision="ics" />
-  <project path="packages/apps/S2E" name="shawe/S2E" revision="master"/>
+  <project path="packages/apps/S2E" name="shawe/android_packages_apps_S2E" remote="github" revision="ics"/>
   <project path="packages/apps/Settings" name="SuperICS/android_packages_apps_Settings" remote="github" revision="ics" />
   <project path="packages/apps/SoundRecorder2" name="SuperICS/android_packages_apps_SoundRecorder2" remote="github" revision="ics" />
   <project path="packages/apps/Wallpapers" name="SuperICS/android_packages_apps_Wallpapers" remote="github" revision="ics" />
