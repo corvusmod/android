@@ -238,6 +238,7 @@
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Gallery" name="CyanogenMod/android_packages_apps_Gallery" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
+  <project path="packages/apps/Launcher2" name="CyanogenMod/android_packages_apps_Launcher2" />
   <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms" />
   <project path="packages/apps/MusicFX" name="CyanogenMod/android_packages_apps_MusicFX" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
@@ -325,7 +326,6 @@
   <project path="packages/apps/DeskClock" name="SuperICS/android_packages_apps_DeskClock" remote="github" />
   <project path="packages/apps/FileExplorer" name="SuperICS/android_packages_apps_FileExplorer" remote="github" />
   <project path="packages/apps/FM" name="SuperICS/android_packages_apps_FM" remote="github" />
-  <project path="packages/apps/Launcher2" name="SuperICS/android_packages_apps_Launcher2" remote="github" />
   <project path="packages/apps/Notes" name="SuperICS/android_packages_apps_Notes" remote="github" />
   <project path="packages/apps/ota-rootkeeper-app" name="SuperICS/ota-rootkeeper-app" remote="github" />
   <project path="packages/apps/Phone" name="SuperICS/android_packages_apps_Phone" remote="github" />
