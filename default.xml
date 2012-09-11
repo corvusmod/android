@@ -338,4 +338,8 @@
   <project path="vendor/osr" name="SuperICS/android_vendor_osr" remote="github" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="SuperICS/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github"/>
   
+  <!-- Devices -->
+  <project path="device/htc/bravo" name="podxboq/android_device_htc_bravo" />
+  <project path="vendor/htc/bravo" name="podxboq/android_vendor_htc_bravo" />
+  
 </manifest>
