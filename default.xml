@@ -215,9 +215,6 @@
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" />
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" />
-  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
-  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
   <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" />
   <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
@@ -311,6 +308,11 @@
 
   <!-- nadlabak -->
   <project path="packages/apps/Usb" name="nadlabak/android_packages_apps_Usb" />
+  
+  <!-- AOKP -->
+  <project path="hardware/qcom/audio" name="AOKP/android_hardware_qcom_audio" revision="jb"/>
+  <project path="hardware/qcom/gps" name="AOKP/hardware_qcom_gps" revision="jb"/>
+  <project path="hardware/qcom/media" name="AOKP/android_hardware_qcom_media" revision="jb"/>
   
   <!-- SuperTeam -->
   <project path="android" name="SuperICS/android" />
