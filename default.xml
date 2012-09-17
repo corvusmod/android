@@ -11,7 +11,7 @@
   <remote  name="assembla"
            fetch="git@git.assembla.com:" />
 
-  <default revision="jellybean"
+  <default revision="refs/heads/jellybean"
            remote="github"
            sync-j="4" />
 
