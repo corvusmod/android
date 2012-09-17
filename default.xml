@@ -6,8 +6,7 @@
            revision="jb-release"/>
 
   <remote  name="github"
-           fetch="git://github.com/" 
-           review="review.cyanogenmod.com" />
+           fetch="git://github.com/"  />
            
   <remote  name="assembla"
            fetch="git@git.assembla.com:" />
