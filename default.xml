@@ -25,6 +25,7 @@
   <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="jb-release" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="jb-release" />
   <project path="external/apache-xml" name="platform/external/apache-xml" remote="aosp" revision="jb-release" />
+  <project path="external/doclava" name="platform/external/doclava" remote="aosp" revision="jb-release" />
   <project path="external/eyes-free" name="platform/external/eyes-free" remote="aosp" revision="jb-release" />
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" remote="aosp" revision="jb-release" />
   <project path="external/grub" name="platform/external/grub" remote="aosp" revision="jb-release" />
@@ -49,10 +50,7 @@
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" remote="aosp" revision="jb-release" />
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" remote="aosp" revision="jb-release" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" remote="aosp" revision="jb-release" />
-  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" revision="jb-release" />
   <project path="frameworks/support" name="platform/frameworks/support" remote="aosp" revision="jb-release" />
-  <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" revision="jb-release" />
-  <project path="gdk" name="CyanogenMod/android_gdk" revision="jb-release" />
   <project path="hardware/invensense" name="platform/hardware/invensense" remote="aosp" revision="jb-release" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="jb-release" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" remote="aosp" revision="jb-release" />
@@ -117,7 +115,6 @@
   <project path="external/dexmaker" name="CyanogenMod/android_external_dexmaker" />
   <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" />
   <project path="external/dnsmasq" name="CyanogenMod/android_external_dnsmasq" />
-  <project path="external/doclava" name="platform/external/doclava" remote="aosp" />
   <project path="external/dropbear" name="CyanogenMod/android_external_dropbear" />
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" />
   <project path="external/easymock" name="CyanogenMod/android_external_easymock" />
@@ -227,6 +224,9 @@
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
   <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" />
   <project path="frameworks/opt/emoji" name="CyanogenMod/android_frameworks_opt_emoji" />
+  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" />
+  <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" />
+  <project path="gdk" name="CyanogenMod/android_gdk" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" />
