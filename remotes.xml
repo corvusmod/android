@@ -14,7 +14,8 @@
 	<remote name="vlc" fetch="git://git.videolan.org/" revision="master" />
 	<remote name="vork" fetch="https://bitbucket.org/Vork/" />
 	<remote name="shawe" fetch="git@github.com:shawe/" />
-
+	<remote name="corvusmod" fetch="git@github.com:corvusmod/" />
+	
 	<default remote="github" revision="jellybean" />
 
 </manifest>
