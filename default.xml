@@ -214,7 +214,6 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" />
   <project path="frameworks/compile/linkloader" name="CyanogenMod/android_frameworks_compile_linkloader" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" />
@@ -222,14 +221,12 @@
   <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
   <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" />
   <project path="frameworks/opt/emoji" name="CyanogenMod/android_frameworks_opt_emoji" />
   <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" />
   <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" />
   <project path="gdk" name="CyanogenMod/android_gdk" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
-  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" />
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
@@ -289,14 +286,12 @@
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
-  <project path="system/bluetooth" name="CyanogenMod/android_system_bluetooth" />
-  <project path="system/core" name="CyanogenMod/android_system_core" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" />
   <project path="system/media" name="CyanogenMod/android_system_media" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/security" name="CyanogenMod/android_system_security" />
   <project path="system/su" name="CyanogenMod/android_system_su" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" />
+  
   
   <!-- Quarx2k -->
   <project path="external/cedarx" remote="github" name="Quarx2k/android_external_cedarx" revision="jellybean"/>
@@ -310,15 +305,19 @@
   <project path="hardware/qcom/media" name="AOKP/hardware_qcom_media" revision="jb"/>
   
   <!-- SuperTeam -->
-  <project path="android" name="SuperICS/android" />
+  <project path="android" name="corvusmod/android" remote="github"/>
   <project path="bionic" name="SuperICS/android_bionic" />
   <project path="build" name="SuperICS/android_build">
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="external/mtd-utils" name="SuperICS/external_amlogic_mtdutils" remote="github"/>
   <project path="external/wpa_supplicant" name="SuperICS/android_external_wpa_supplicant" remote="github"/>
-  <project path="frameworks/base" name="SuperICS/android_frameworks_base" remote="github" />
+  <project path="frameworks/base" name="corvusmod/android_frameworks_base" remote="github" />
+  <project path="frameworks/av" name="corvusmod/android_frameworks_av" remote="github" />
+  <project path="frameworks/native" name="corvusmod/android_frameworks_native" remote="github" />
   <project path="hardware/qcom/display" name="SuperICS/android_hardware_qcom_display" remote="github"/>
+  <project path="hardware/libhardware" name="corvusmod/android_hardware_libhardware" remote="github" />
+  <project path="hardware/realtek" name="corvusmod/android_hardware_realtek" remote="github" />
   <project path="packages/apps/ContactsWidgets" name="SuperICS/android_packages_apps_ContactsWidgets" remote="github" />
   <project path="packages/apps/DeskClock" name="SuperICS/android_packages_apps_DeskClock" remote="github" />
   <project path="packages/apps/FileExplorer" name="SuperICS/android_packages_apps_FileExplorer" remote="github" />
@@ -330,11 +329,13 @@
   <project path="packages/apps/Settings" name="SuperICS/android_packages_apps_Settings" remote="github" />
   <project path="packages/apps/SoundRecorder2" name="SuperICS/android_packages_apps_SoundRecorder2" remote="github" />
   <project path="packages/apps/Wallpapers" name="SuperICS/android_packages_apps_Wallpapers" remote="github" />
+  <project path="system/bluetooth" name="corvusmod/android_system_bluetooth" remote="github" />
+  <project path="system/core" name="corvusmod/android_system_core" remote="github" />
+  <project path="system/vold" name="corvusmod/android_system_vold" remote="github" />
   <project path="vendor/osr" name="SuperICS/android_vendor_osr" remote="github" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="SuperICS/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github"/>
   
   <!-- Devices -->
-  <project path="device/htc/bravo" name="podxboq/android_device_htc_bravo" />
-  <project path="vendor/htc/bravo" name="podxboq/android_vendor_htc_bravo" />
+  <project path="device/softwinner/mk802" name="corvusmod/android_device_mk802" />
   
 </manifest>
